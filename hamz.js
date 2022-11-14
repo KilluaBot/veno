@@ -1721,7 +1721,7 @@ displayText: 'OWNER BOT',
 url: 'https://wa.me/qr/M3ZKS3GNCSJSG1'
 }},
     {index: 3, quickReplyButton: { displayText: `DONASI`, id: 'donasi'} },
-	{index: 4, quickReplyButton: { displayText: `IKLAN`, id: 'iklan'} },
+	{index: 4, quickReplyButton: { displayText: `IKLAN & TOPUP`, id: 'ikl'} },
     {index: 5, quickReplyButton: { displayText: `ALLMENU`, id: 'menuall'} }
 ]
 let timestamp = speed()
@@ -3368,6 +3368,19 @@ ham.sendMessage(m.chat, buttonMessage, {quoted:m})
 }
 break
 //by Thunder team
+case 'ikl': {
+	let buttonMesaage: {
+		text: 'Mau Topup atau Liat Iklan BOT?'
+		buttons: [
+{buttonId: 'iklan', buttonText: {displayText: '⫹⫺ IKLAN'}, type: 1},
+{buttonId: 'topup', buttonText: {displayText: '⫹⫺ TOPUP'}, type: 1}
+]
+footer: 'Dipilih Dulu',
+headerType: 6
+	}
+	ham.sendMessage(m.chat, buttonMessage, {quoted:m})
+}
+break
 case 'iklan': {
   const sections = [
     {
@@ -5507,14 +5520,14 @@ case 'speedtest': {
 case 'emel': {
 const btn = [
     {index: 1, urlButton: {displayText: `OWNER`, url : 'https://wa.me/qr/M3ZKS3GNCSJSG1' }}]
-ham.sendMessage(m.chat, { image: { url: `https://i.ibb.co/m86xdkW/gege.png` }, caption: `*NB: Harga Sewaktu-waktu akan berubah*
+ham.sendMessage(m.chat, { image: { url: `https://i.ibb.co/YyTRHvZ/Whats-App-Image-2022-11-14-at-18-34-53.jpg` }, caption: `*NB: Harga Sewaktu-waktu akan berubah*
 https://wa.me/qr/M3ZKS3GNCSJSG1`, templateButtons: btn},{quoted:m})
 }
 break
 case 'efef': {
 const btn = [
     {index: 1, urlButton: {displayText: `OWNER`, url : 'https://wa.me/qr/M3ZKS3GNCSJSG1' }}]
-ham.sendMessage(m.chat, { image: { url: `https://i.ibb.co/4VWdKfJ/gege.png` }, caption: `*NB: Harga Sewaktu-waktu akan berubah*
+ham.sendMessage(m.chat, { image: { url: `https://i.ibb.co/KrsChzM/Whats-App-Image-2022-11-14-at-18-34-51.jpg` }, caption: `*NB: Harga Sewaktu-waktu akan berubah*
 https://wa.me/qr/M3ZKS3GNCSJSG1`, templateButtons: btn},{quoted:m})
 }
 break
