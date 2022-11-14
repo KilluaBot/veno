@@ -3369,12 +3369,13 @@ ham.sendMessage(m.chat, buttonMessage, {quoted:m})
 break
 //by Thunder team
 case 'ikl': {
-	let buttonMessage = {
-		text: 'Mau Topup atau Liat Iklan BOT?'
-		buttons: [
+	let buttso = [
 {buttonId: 'iklan', buttonText: {displayText: '⫹⫺ IKLAN'}, type: 1},
 {buttonId: 'topup', buttonText: {displayText: '⫹⫺ TOPUP'}, type: 1}
 ]
+	let buttonMessage = {
+		text: 'Mau Topup atau Liat Iklan BOT?',
+		buttons: buttso,
 footer: 'Dipilih Dulu',
 headerType: 6
 	}
